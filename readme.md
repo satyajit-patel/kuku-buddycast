@@ -4,6 +4,8 @@
 
 ## Find the live link [here](https://kuku-buddycast.vercel.app)
 
+### Find the demo video [here](https://drive.google.com/file/d/1HMg_lhtutW7B_BBjwYkPFb8btB5TPeVa/view?usp=sharing)
+
 ### 🔥 What It Does
 
 - Generates a daily, personalized podcast based on each user’s preferences (topics + duration).
