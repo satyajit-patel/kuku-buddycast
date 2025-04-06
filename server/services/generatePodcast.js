@@ -1,15 +1,15 @@
-const { ChatGroq } = require("langchain/chat_models/groq")
-const { HumanMessage } = require("langchain/schema")
+const { ChatGroq } = require("@langchain/groq");
 
 const generatePodcastScript = async (topics, duration) => {
   const model = new ChatGroq({
+    model: "llama-3.3-70b-versatile",
     apiKey: process.env.GROQ_API_KEY,
-    model: "mixtral-8x7b-32768"
-  })
+  });
 
-  const input = `Write a ${duration}-minute podcast script in Hindi on the topics: ${topics.join(", ")}`
+  const today = new Date().toDateString();
+  const input = `Write a short paragraph podcast script in English on the topics: ${topics.join(", ")}. Today is ${today}. Include some fresh insights and a unique opening message.`;
 
-  const result = await model.call([new HumanMessage(input)])
+  const result = await model.invoke(input)
   return result.content
 }
 
