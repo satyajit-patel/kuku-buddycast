@@ -2,7 +2,7 @@
 
 **Kuku BuddyCast** is an AI-powered personalized audio content generator.
 
-## Find the live link [here](coming soon)
+## Find the live link [here](https://kuku-buddycast.vercel.app)
 
 ### 🔥 What It Does
 
